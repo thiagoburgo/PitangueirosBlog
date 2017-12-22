@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pitangueiros.Blog.Domain.Entities.Autor">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Autor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pitangueiros.Blog.Domain.Entities.Postagem" HideInheritanceLine="true">
+    <Position X="3.25" Y="4.25" Width="1.5" />
+    <AssociationLine Name="Autor" Type="Pitangueiros.Blog.Domain.Entities.Autor">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.037" Y="0.227" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Postagem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Autor" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Tag" />
+      <Property Name="Comentario" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Pitangueiros.Blog.Domain.Entities.Comentario" HideInheritanceLine="true">
+    <Position X="3.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Comentario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pitangueiros.Blog.Domain.Entities.Tag" HideInheritanceLine="true">
+    <Position X="6" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pitangueiros.Blog.Domain.Entities.Usuario" HideInheritanceLine="true">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pitangueiros.Blog.Domain.Entities.EntidadeBase">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EntidadeBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
