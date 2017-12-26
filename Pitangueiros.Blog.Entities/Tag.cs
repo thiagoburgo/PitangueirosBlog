@@ -1,4 +1,4 @@
 ﻿namespace Pitangueiros.Blog.Domain.Entities {
-    public class Tag : EntidadeBase {
+    public class Tag : EntidadeBase<int> {
     }
 }

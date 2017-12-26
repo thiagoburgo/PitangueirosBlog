@@ -1,4 +1,4 @@
 ﻿namespace Pitangueiros.Blog.Domain.Entities {
-    public class Comentario : EntidadeBase {
+    public class Comentario : EntidadeBase<long> {
     }
 }

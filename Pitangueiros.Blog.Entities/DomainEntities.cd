@@ -47,12 +47,13 @@
       <FileName>Usuario.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Pitangueiros.Blog.Domain.Entities.EntidadeBase">
+  <Class Name="Pitangueiros.Blog.Domain.Entities.EntidadeBase&lt;TId&gt;">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EntidadeBase.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 namespace Pitangueiros.Blog.Domain.Entities {
-    public class Postagem : EntidadeBase {
+    public class Postagem : EntidadeBase<int> {
         public Autor Autor { get; set; }
 
         public List<Tag> Tag { get; set; }

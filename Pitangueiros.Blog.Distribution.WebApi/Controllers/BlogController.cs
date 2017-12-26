@@ -5,6 +5,9 @@ namespace Pitangueiros.Blog.Distribution.WebApi.Controllers
 {
     public class BlogController : ApiController
     {
+        public BlogController() {
+            
+        }
 
         [HttpGet]
         public IList<string> GetValues() {

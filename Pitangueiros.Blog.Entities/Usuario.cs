@@ -1,5 +1,6 @@
 ﻿namespace Pitangueiros.Blog.Domain.Entities {
-    public class Usuario : EntidadeBase {
+    public class Usuario : EntidadeBase<long> {
+
         public string Nome { get; set; }
 
         public string Senha { get; set; }
