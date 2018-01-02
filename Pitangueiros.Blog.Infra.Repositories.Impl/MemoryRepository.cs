@@ -11,12 +11,12 @@ namespace Pitangueiros.Blog.Infra.Repositories.Impl
     public class MemoryRepository<T, TId> 
         : IRepository<T, TId> 
             where T : IEntidadeBase<TId> 
-            where TId : IComparable<TId>, IEquatable<TId>'
+            where TId : IComparable<TId>, IEquatable<TId>
     {
 
         protected static readonly List<T> minhasEntidades = new List<T>();
 
-        public void Salvar(T entidade)
+        public void Inserir(T entidade)
         {
             if (entidade == null) {
                 throw new ArgumentNullException(nameof(entidade));

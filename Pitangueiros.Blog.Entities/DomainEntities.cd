@@ -3,7 +3,7 @@
   <Class Name="Pitangueiros.Blog.Domain.Entities.Autor">
     <Position X="3.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Autor.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -15,7 +15,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <HashCode>AAgAAAAAAEAgAAAAAAAAAAAAAAAAAAAAEAAAACAEABA=</HashCode>
       <FileName>Postagem.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -27,7 +27,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Pitangueiros.Blog.Domain.Entities.Comentario" HideInheritanceLine="true">
-    <Position X="3.25" Y="6" Width="1.5" />
+    <Position X="3" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Comentario.cs</FileName>

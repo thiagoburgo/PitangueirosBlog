@@ -8,7 +8,7 @@ namespace Pitangueiros.Blog.Domain.Contracts.Repositories
         where T: IEntidadeBase<TId> 
         where TId : IComparable<TId>, IEquatable<TId>
     {
-        void Salvar(T entidade);
+        void Inserir(T entidade);
 
         T ObterPorId(TId id);
     }
