@@ -48,6 +48,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\Pitangueiros.Blog.Cross.IoC\Pitangueiros.Blog.Cross.IoC.csproj">
+      <Project>{F7A13611-44CA-46CC-BCE8-1448CDBD8E91}</Project>
+      <Name>Pitangueiros.Blog.Cross.IoC</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Pitangueiros.Blog.Entities\Pitangueiros.Blog.Domain.Entities.csproj">
       <Project>{f4758712-939c-450f-996e-8ab6ad9db677}</Project>
       <Name>Pitangueiros.Blog.Domain.Entities</Name>

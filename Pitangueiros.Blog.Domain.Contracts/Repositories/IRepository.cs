@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Pitangueiros.Blog.Domain.Entities;
 
 namespace Pitangueiros.Blog.Domain.Contracts.Repositories

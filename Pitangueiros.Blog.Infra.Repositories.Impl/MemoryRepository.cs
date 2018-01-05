@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Pitangueiros.Blog.Domain.Contracts.Repositories;
 using Pitangueiros.Blog.Domain.Entities;
 

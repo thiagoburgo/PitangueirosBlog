@@ -1,4 +1,5 @@
-﻿using Pitangueiros.Blog.Domain.Contracts.Repositories;
+﻿using System.Collections.Generic;
+using Pitangueiros.Blog.Domain.Contracts.Repositories;
 using Pitangueiros.Blog.Domain.Contracts.Services;
 using Pitangueiros.Blog.Domain.Entities;
 
@@ -26,9 +27,12 @@ namespace Pitangueiros.Blog.Domain.Services.Impl
 
         public void CriarUsuario(Usuario usuario)
         {
-            // if (this.configurarionService.NovosUsuariosPermitidos()) {
-            this.usuarioRepository.Salvar(usuario);
-            // }
+            //Qualquer regra de negocio aqui....
+            this.usuarioRepository.Inserir(usuario);
+        }
+
+        public IList<Usuario> ConsultarUsuarioPorNome(string nome) {
+            return this.usuarioRepository.ConsultarUsuarioPorNome(nome);
         }
     }
 }

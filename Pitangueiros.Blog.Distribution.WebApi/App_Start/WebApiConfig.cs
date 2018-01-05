@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web.Http;
+﻿using System.Web.Http;
+using System.Web.Http.Dispatcher;
+using Pitangueiros.Blog.Cross.IoC;
+using Pitangueiros.Blog.Distribution.WebApi.IoC;
 
 namespace Pitangueiros.Blog.Distribution.WebApi
 {
@@ -14,9 +14,13 @@ namespace Pitangueiros.Blog.Distribution.WebApi
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+            config.Services.Replace(typeof(IHttpControllerActivator), new ApiControllerActivator(IocManager.Instance));
+
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
+            
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
         }

@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Core.4.2.1\lib\net45\Castle.Core.dll</HintPath>
     </Reference>
@@ -40,6 +43,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,10 +53,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoMapperConventionalRegistrar.cs" />
+    <Compile Include="AutoMapper\IMapperProfile.cs" />
+    <Compile Include="BasicConventionalRegistrar.cs" />
+    <Compile Include="Contracts\IIocInitializer.cs" />
+    <Compile Include="ConventionalRegistrationConfig.cs" />
+    <Compile Include="ConventionalRegistrationContext.cs" />
+    <Compile Include="DependencyLifeStyle.cs" />
+    <Compile Include="DisposableDependencyObjectWrapperOfT.cs" />
+    <Compile Include="Extensions\IocRegistrarExtensions.cs" />
+    <Compile Include="Extensions\IocResolverExtensions.cs" />
+    <Compile Include="Contracts\IConventionalDependencyRegistrar.cs" />
+    <Compile Include="Contracts\IConventionalRegistrationContext.cs" />
+    <Compile Include="Contracts\IDisposableDependencyObjectWrapper.cs" />
+    <Compile Include="Contracts\IDisposableDependencyObjectWrapperOfT.cs" />
+    <Compile Include="Contracts\IIocManager.cs" />
+    <Compile Include="Contracts\IIocManagerAccessor.cs" />
+    <Compile Include="Contracts\IIocRegistrar.cs" />
+    <Compile Include="Contracts\IIocResolver.cs" />
+    <Compile Include="IocManager.cs" />
+    <Compile Include="Contracts\ISingletonDependency.cs" />
+    <Compile Include="Contracts\ITransientDependency.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pitangueiros.Blog.Cross.Core\Pitangueiros.Blog.Cross.Core.csproj">
+      <Project>{4865FEA7-7122-4DE3-BF49-9E0D5114ADBA}</Project>
+      <Name>Pitangueiros.Blog.Cross.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

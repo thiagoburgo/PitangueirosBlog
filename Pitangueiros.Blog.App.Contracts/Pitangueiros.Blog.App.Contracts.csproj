@@ -41,12 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IUsuarioAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Pitangueiros.Blog.App.Entities\Pitangueiros.Blog.App.Entities.csproj">
       <Project>{eaad2d94-c58e-4f26-a4a4-4e8e7b0fb931}</Project>
       <Name>Pitangueiros.Blog.App.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Pitangueiros.Blog.Cross.IoC\Pitangueiros.Blog.Cross.IoC.csproj">
+      <Project>{F7A13611-44CA-46CC-BCE8-1448CDBD8E91}</Project>
+      <Name>Pitangueiros.Blog.Cross.IoC</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

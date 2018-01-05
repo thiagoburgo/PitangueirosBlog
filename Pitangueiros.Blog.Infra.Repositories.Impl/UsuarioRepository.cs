@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Pitangueiros.Blog.Domain.Contracts.Repositories;
 using Pitangueiros.Blog.Domain.Entities;
 
 namespace Pitangueiros.Blog.Infra.Repositories.Impl
 {
-    public class UsuarioMemoryRepository 
+    public class UsuarioRepository 
         : MemoryRepository<Usuario, long>, IUsuarioRepository
     {
 
@@ -19,6 +16,7 @@ namespace Pitangueiros.Blog.Infra.Repositories.Impl
 
             return query.ToList();
         }
+        
 
         public Usuario ObterPorLogin(string login) {
             // return minhasEntidades.SingleOrDefault(u => u.Email == login);
