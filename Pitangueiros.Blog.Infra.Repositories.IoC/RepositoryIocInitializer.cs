@@ -13,7 +13,6 @@ namespace Pitangueiros.Blog.Infra.Repositories.IoC
     {
         public void Initialize(IIocManager iocManager)
         {
-            iocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
             iocManager.RegisterAssemblyByConvention(Assembly.GetAssembly(typeof(UsuarioRepository)));
         }
     }

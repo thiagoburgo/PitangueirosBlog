@@ -4,7 +4,7 @@ using Pitangueiros.Blog.Cross.IoC;
 
 namespace Pitangueiros.Blog.App.Contracts
 {
-    public interface IUsuarioAppService : ITransientDependency
+    public interface IUsuarioAppService : IApplicationService
     {
         bool Autenticar(AutenticacaoInputDto login);
 

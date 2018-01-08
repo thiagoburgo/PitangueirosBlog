@@ -52,6 +52,7 @@
     <Compile Include="AppServicesInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AppServiceIocInitializer.cs" />
+    <Compile Include="ValidationInterceptor.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Pitangueiros.Blog.App.Contracts\Pitangueiros.Blog.App.Contracts.csproj">

@@ -8,7 +8,6 @@ namespace Pitangueiros.Blog.App.Services.IoC
     {
         public void Initialize(IIocManager iocManager)
         {
-            iocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
             iocManager.RegisterAssemblyByConvention(Assembly.GetAssembly(typeof(UsuarioAppService)));
         }
     }
