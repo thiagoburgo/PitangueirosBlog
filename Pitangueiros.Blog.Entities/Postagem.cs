@@ -16,5 +16,7 @@ namespace Pitangueiros.Blog.Domain.Entities {
         public DateTime DataHoraCriacao { get; set; }
 
         public DateTime DataHoraAtualizacao { get; set; }
+
+        
     }
 }
