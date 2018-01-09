@@ -5,6 +5,6 @@ namespace Pitangueiros.Blog.Domain.Entities {
     {
         public string Bio { get; set; }
 
-        public virtual IList<Postagem> Postagems { get; set; }
+        public virtual IList<Postagem> Postagens { get; set; }
     }
 }

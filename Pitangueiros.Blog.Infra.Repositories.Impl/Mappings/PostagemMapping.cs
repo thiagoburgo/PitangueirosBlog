@@ -16,12 +16,16 @@ namespace Pitangueiros.Blog.Infra.Repositories.Impl.Mappings
         {
 
             this.HasKey(p => p.Id);
-            this.Property(p => p.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            this.Property(p => p.Id)
+                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
             this.Property(p => p.Conteudo).HasColumnName("Conteudo").IsRequired();
             this.Property(p => p.Titulo).HasColumnName("Titulo").IsRequired();
             this.Property(p => p.DataHoraAtualizacao).HasColumnName("DataHoraAtualizacao").IsRequired();
-            this.Property(p => p.DataHoraCriacao).HasColumnName("DataHoraCriacao").IsRequired();
-            this.HasRequired(p => p.Autor).WithMany(p => p.Postagems);
+            this.Property(p => p.DataHoraCriacao)
+                .HasColumnName("DataHoraCriacao")
+                .IsRequired();
+            this.HasRequired(p => p.Autor)
+                .WithMany(p => p.Postagens);
 
         }
     }

@@ -45,6 +45,7 @@
     <Compile Include="Comentario.cs" />
     <Compile Include="EntidadeBase.cs" />
     <Compile Include="IEntidadeBase.cs" />
+    <Compile Include="Moderador.cs" />
     <Compile Include="Postagem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tag.cs" />

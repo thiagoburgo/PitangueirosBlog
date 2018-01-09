@@ -3,19 +3,19 @@
   <Class Name="Pitangueiros.Blog.Domain.Entities.Autor">
     <Position X="3.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Autor.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Pitangueiros.Blog.Domain.Entities.Postagem" HideInheritanceLine="true">
-    <Position X="3.25" Y="4.25" Width="1.5" />
+    <Position X="3.25" Y="4.75" Width="1.5" />
     <AssociationLine Name="Autor" Type="Pitangueiros.Blog.Domain.Entities.Autor">
       <MemberNameLabel ManuallyPlaced="true">
         <Position X="0.037" Y="0.227" />
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAgAAAAAAEAgAAAAAAAAAAAAAAAAAAAAEAAAACAEABA=</HashCode>
+      <HashCode>AAgAAAAAAEAgAAAAAAAAAAAAAAAQAAAAEAAAACAEABA=</HashCode>
       <FileName>Postagem.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -27,21 +27,21 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Pitangueiros.Blog.Domain.Entities.Comentario" HideInheritanceLine="true">
-    <Position X="3" Y="7.5" Width="1.5" />
+    <Position X="3.5" Y="7.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Comentario.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Pitangueiros.Blog.Domain.Entities.Tag" HideInheritanceLine="true">
-    <Position X="6" Y="4.25" Width="1.5" />
+    <Position X="8" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Tag.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Pitangueiros.Blog.Domain.Entities.Usuario" HideInheritanceLine="true">
-    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Usuario.cs</FileName>
@@ -54,6 +54,13 @@
       <FileName>EntidadeBase.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pitangueiros.Blog.Domain.Entities.Moderador">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Moderador.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

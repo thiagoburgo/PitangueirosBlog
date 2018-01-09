@@ -17,6 +17,7 @@ namespace Pitangueiros.Blog.Domain.Entities {
 
         public DateTime DataHoraAtualizacao { get; set; }
 
+        public Moderador Moderador { get; set; }
         
     }
 }
